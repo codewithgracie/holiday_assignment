@@ -10,6 +10,9 @@ module.exports = {
         'nav-active': '#FFFFFF',
         'subtitles': '#6A4E74'
       },
+      fontFamily: {
+        'body': ['inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],

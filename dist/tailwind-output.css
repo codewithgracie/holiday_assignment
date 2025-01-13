@@ -598,6 +598,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -618,6 +622,10 @@ video {
   display: inline-flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-auto {
   height: auto;
 }
@@ -634,6 +642,18 @@ video {
   max-width: 72rem;
 }
 
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -648,6 +668,10 @@ video {
 
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -679,6 +703,12 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.from-\[\#F5F5F5\] {
+  --tw-gradient-from: #F5F5F5 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(245 245 245 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-\[\#F9C5B1\] {
   --tw-gradient-from: #F9C5B1 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(249 197 177 / 0) var(--tw-gradient-to-position);
@@ -687,6 +717,10 @@ video {
 
 .to-\[\#D0B3D1\] {
   --tw-gradient-to: #D0B3D1 var(--tw-gradient-to-position);
+}
+
+.to-\[\#EAF4FC\] {
+  --tw-gradient-to: #EAF4FC var(--tw-gradient-to-position);
 }
 
 .p-10 {
@@ -707,6 +741,16 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -722,14 +766,28 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -744,6 +802,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .font-thin {
@@ -763,6 +825,10 @@ video {
 .text-subtitles {
   --tw-text-opacity: 1;
   color: rgb(106 78 116 / var(--tw-text-opacity, 1));
+}
+
+body {
+  font-family: inter, sans-serif;
 }
 
 .text-nav-default {
@@ -850,9 +916,17 @@ video {
   transition: opacity 1s ease, visibility 0.5s ease 1s;
 }
 
+.graduation_cap{
+  width: 200px;
+}
+
 @media (min-width: 640px) {
   .sm\:w-4 {
     width: 1rem;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:gap-1 {
@@ -874,4 +948,3 @@ video {
     line-height: 1.5rem;
   }
 }
-  
